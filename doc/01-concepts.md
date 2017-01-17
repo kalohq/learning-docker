@@ -2,14 +2,9 @@
 
 ### Goals
 
-- be able to name and place the basic concepts of the Docker ecosystem within a conceptual structure around package management and service management
-- be able to name at least one equivalent concept
+- be able to name and place the basic concepts of the Docker ecosystem within the areas of package management and service management
+- be able to name at least one equivalent concept for each
 - be able to conceptualise the flow of operations from a bare package specification until we get a running service in another environment
-
-Name the concepts and explain briefly
-Draw attention to the `docker help` output and a specific subset of commands there
-Hub.docker.com
-Dockerfile
 
 ## Intro
 
@@ -80,3 +75,5 @@ Aligning the Docker concepts with these existing ones, you should hopefully easi
 - [Remote] Start a `container` from that `image`
 
 Provided the Local and the Remote machines both have Docker installed and access to the internet.
+
+That's the most theory we'll ever go over in a single chapter, promise! We just had to get some fundamental things out of the way. Now, don't be afraid to cycle back and take a look at some of these again if you need to!

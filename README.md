@@ -17,6 +17,7 @@ Learning Docker is a guided tour through the basic concepts of Docker, through t
 ## Get ready
 
 - Install [Docker](https://docs.docker.com/engine/installation/)
+- Sign up to [Docker Hub](https://hub.docker.com/) and connect it to your GitHub account
 - Clone this repository so you can navigate to the different exercises
 ```
 git clone git@github.com:lystable/learning-docker.git
