@@ -1,5 +1,5 @@
 FROM <the owner of the base image>/<the name of the base image>
-AUTHOR <your name and username>
+MAINTAINER <your name and username>
 
 RUN <install nginx>
 ...
