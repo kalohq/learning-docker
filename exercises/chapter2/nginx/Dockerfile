@@ -1,4 +1,4 @@
-FROM <your Docker Hub username>/<your chosen image name>
+FROM <the owner of the base image>/<the name of the base image>
 AUTHOR <your name and username>
 
 RUN <install nginx>
