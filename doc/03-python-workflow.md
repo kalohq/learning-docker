@@ -21,7 +21,7 @@ an easy workflow to work with, when developing this Python app.
 - 4) Fill in the `COPY` steps in the `Dockerfile`, with the files you need to run your application
 - 5) Fill in the `RUN` steps that you need in the `Dockerfile`
 
-`Hint:` If you're unsure what commands you need and are feeling a bit lost, why not try the approach mentioned [in the previous chapter](./02-why-docker.md##a-trick-to-help-with-the-dockerfile-writing-part).
+`Hint:` If you're unsure what commands you need and are feeling a bit lost, why not try the approach mentioned [in the previous chapter](./02-why-docker.md#a-trick-to-help-with-the-dockerfile-writing-part).
 - 6) Fill in the command that **runs** the application in the `CMD` step
 - 7) Build your `Dockerfile` into an `image`
 - 8) Run a new container using that image!
