@@ -34,13 +34,35 @@ Install and configure Nginx on your Macbook's and Linux systems...
 `Hint:` This is where you start looking at `docker help` and what you can do with it.
 - 9) Run a new container using that image!
 
-`Hint:` When running it, you need to expose Nginx's internal port (port 80) to a host port of your choosing.
+`Debugging hint:` This is where you start looking at `docker help` and what you can do with it.
+`Network hint:` When running it, you need to expose Nginx's internal port (port 80) to a host port of your choosing.
 - 10) Make sure you can see the HTML page in your browser!
 
 `Hint:` If not, is the container running? What are the container's logs showing?
 - 11) Push your Docker image to Docker Hub!
 
 `Hint:` You will find that a 1-part image name like `mynginx` is not enough context to publish the image. You'll need a full name like `<your username>/nginx` in order to publish.
+
+## A trick to help with the Dockerfile writing part
+
+You probably remember your build failing as you missed the auto-handling of a prompt:
+
+```
+0 upgraded, 30 newly installed, 0 to remove and 6 not upgraded.
+Need to get 15.5 MB of archives.
+After this operation, 57.4 MB of additional disk space will be used.
+Do you want to continue? [Y/n] ^C
+```
+
+As you are fleshing out the instructions in your `Dockerfile`, you don't know *exactly* what you're after.
+
+Imagine if you could just start a container with your base image and then test the commands you *think* you want in there.
+
+Wouldn't that be great? ... oh wait ...
+
+You can actually start a test container with an interactive Shell, just by specifying that base image, like this: `docker run -ti library/ubuntu bash`
+
+The `-ti` arguments tell the Docker deamon to run the container in interactive mode.
 
 ## Some philosophies
 
