@@ -12,7 +12,7 @@ Learning Docker is a guided tour through the basic concepts of Docker, through t
 
 [Chapter 3 - Getting a basic workflow with Python and Docker](./doc/03-python-workflow.md)
 
-[Chapter 4 - Adding Postgres to your stack](./doc/04-python-growing-stack.md)
+[Chapter 4 - Adding Postgres to your stack (Under construction)](./doc/04-python-growing-stack.md)
 
 ## Get ready
 
