@@ -25,4 +25,4 @@ git clone git@github.com:lystable/learning-docker.git
 
 ## Credits
 
-This guide was prepared by Lystable, under MIT License. Please feel free to raise pull requests and recommend improvements!
+This guide was prepared by the Lystable family, under MIT License. Please feel free to raise pull requests and recommend improvements!
