@@ -7,7 +7,6 @@ from flask import Flask, redirect, render_template
 
 app = Flask(__name__, static_url_path='')
 
-# API_KEY = os.environ['GIPHY_API_KEY']
 API_KEY = 'dc6zaTOxFJmzC'
 
 
@@ -42,5 +41,4 @@ def what(query):
 
 
 if __name__ == '__main__':
-    # app.run(host='0.0.0.0', port=5000)
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000)

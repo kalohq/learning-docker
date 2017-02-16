@@ -1,14 +1,10 @@
-#FROM <a chosen operating system image>
-#MAINTAINER "<your name and username>"
-FROM python:3.5
+FROM <a chosen operating system image, choose a specific version!>
+MAINTAINER <your name and username>
 
 WORKDIR /app
 
-COPY requirements.txt /app/requirements.txt
-RUN pip install -r /app/requirements.txt
+COPY <some stuff> <to some location inside the container>
 
-COPY src/ /app/
-#COPY <something else> <to some location inside the container>
+RUN <do you need to install something?>
 
-#CMD <run the Python app in the foreground>
-CMD python /app/app.py
+CMD <run the Python app in the foreground>
