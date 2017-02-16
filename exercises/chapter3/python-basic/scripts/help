@@ -7,7 +7,9 @@ Welcome to the team! We look forward to your contributions to this awesome but n
     npm install --global please-runner
     please run
 
-2. Whenever you change your dependencies in requirements.txt, please use these steps:
+2. Feel free to make changes in the code – the app will auto reload! ✨
+
+3. Whenever you change your dependencies in requirements.txt, please use these steps:
 
     # kill your \`please run\`
     please build
