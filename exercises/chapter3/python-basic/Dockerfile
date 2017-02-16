@@ -1,10 +1,8 @@
-FROM <a chosen operating system image, choose a specific version!>
-MAINTAINER <your name and username>
+FROM python:3-onbuild
+MAINTAINER isnotahippy
 
 WORKDIR /app
 
-COPY <some stuff> <to some location inside the container>
+COPY ./src /app/src
 
-RUN <do you need to install something?>
-
-CMD <run the Python app in the foreground>
+CMD python /app/src/app.py
