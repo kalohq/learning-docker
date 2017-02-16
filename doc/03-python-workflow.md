@@ -1,6 +1,6 @@
 # Chapter 3 - Getting a basic Python workflow
 
-### Goals
+## Goals
 
 - be able to dockerize a Flask web server
 - come up with the steps that developers will use on a regular basis
@@ -54,7 +54,7 @@ Let's get some automagic-ness in our next steps!
 - 14) Given file changes now get reflected inside the container, change the query text passed to the Giphy API to always append the word `scotland` to whatever the user is searching for. Test the effectiveness of your changes!
 - 14) Provided you've tested the steps yourself, fill in the missing instructions in `scripts/help` so that new joiners will find their way around!
 
-### Conclusion
+## Conclusion
 
 There's a dual achievement to what we've done here, even though we only intended for the developer workflow part of it.
 
