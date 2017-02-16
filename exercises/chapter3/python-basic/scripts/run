@@ -1,5 +1,5 @@
 #!/bin/bash -e
-cd "$(dirname "$0")"/..
+project_root="$(dirname "$(dirname "$(readlink -f "$0")")")"
 
 if ! \
   docker images \
@@ -13,5 +13,6 @@ docker run \
   --rm \
   --tty \
   --interactive \
+  --volume "$project_root"/src:/the-next-big-flask-thing/src \
   --publish 9000:5000 \
   the-next-big-flask-thing
