@@ -32,7 +32,7 @@ This exercise looks at that groundwork specifically for a Flask application.
 
 `Debugging hint:` This is where you start looking at `docker help` and what you can do with it.
 `Network hint:` When running it, you need to expose Flask's port to a host port of your choosing.
-- 9) Make sure you can see the 'Hello world' in your browser!
+- 9) Make sure you can see the usage instructions on http://localhost:9000 in your browser and you're able to play with the API.
 
 `Hint:` If not, is the container running? What are the container's logs showing? `docker help` is your friend again for these questions.
 - 10) With the build and run commands that you used, now fill in the `build` and `run` placeholder scripts that already exist
@@ -51,6 +51,7 @@ Let's get some automagic-ness in our next steps!
 
 - 12) Make Flask reload when files change
 - 13) Change the configuration of your `docker run` call to make sure that as you change the Python files with your IDE, the changes get reflected in your running Python application automagically. Time for a docker volume!! :tada: 
+- 14) Given file changes now get reflected inside the container, change the query text passed to the Giphy API to always append the word `scotland` to whatever the user is searching for. Test the effectiveness of your changes!
 - 14) Provided you've tested the steps yourself, fill in the missing instructions in `scripts/help` so that new joiners will find their way around!
 
 ### Conclusion
