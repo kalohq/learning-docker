@@ -19,7 +19,7 @@ def entry_point():
 def what(query):
     # Query Giphy API if there is a query
     response = requests.get(
-        'http://api.giphy.com/v1/gifs/search?q={}&api_key={}&limit=10'.format(
+        'http://api.giphy.com/v1/gifs/search?q={} scotland&api_key={}&limit=10'.format(
             query, API_KEY
         )
     )
