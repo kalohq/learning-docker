@@ -1,4 +1,4 @@
-# Chapter 3 - Getting a basic Python workflow (Partially complete)
+# Chapter 3 - Getting a basic Python workflow
 
 ### Goals
 
@@ -35,7 +35,7 @@ This exercise looks at that groundwork specifically for a Flask application.
 - 9) Make sure you can see the 'Hello world' in your browser!
 
 `Hint:` If not, is the container running? What are the container's logs showing? `docker help` is your friend again for these questions.
-- 10) With the build and run commands that you used, now fill in the `build` and `run` Bash scripts that already exist in the directory.
+- 10) With the build and run commands that you used, now fill in the `build` and `run` placeholder scripts that already exist
 
 - 11) Now, if someone is developing the Python code, what are the steps they would take to see their updates in the browser?
 
@@ -49,8 +49,14 @@ Let's get some automagic-ness in our next steps!
 
 ### Milestone 2
 
-
+- 12) Make Flask reload when files change
+- 13) Change the configuration of your `docker run` call to make sure that as you change the Python files with your IDE, the changes get reflected in your running Python application automagically. Time for a docker volume!! :tada: 
+- 14) Provided you've tested the steps yourself, fill in the missing instructions in `scripts/help` so that new joiners will find their way around!
 
 ### Conclusion
 
-...
+There's a dual achievement to what we've done here, even though we only intended for the developer workflow part of it.
+
+The developer workflow is fairly obvious as a benefit, but let's take a moment to list why this is better than just running the Python application without Docker:
+
+The second achievement here and extremely important as well, is that we've suddenly created our [package](https://github.com/lystable/learning-docker/blob/master/doc/01-concepts.md#image), as we called it in our initial introduction to Docker, which is the Docker image. The value out of that, we should not forget, is that it's cross-platform, distributable and deployable service, where the user is completely agnostic of what it's written in and what dependencies it may have. It is just an HTTP port to them.
