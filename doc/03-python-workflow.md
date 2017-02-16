@@ -57,6 +57,18 @@ Let's get some automagic-ness in our next steps!
 
 There's a dual achievement to what we've done here, even though we only intended for the developer workflow part of it.
 
-The developer workflow is fairly obvious as a benefit, but let's take a moment to list why this is better than just running the Python application without Docker:
+For the developer workflow it's fairly obvious why this is beneficial, but regardless let's take a moment to list why this is better than just running the Python application without Docker:
+
+- we did not install any system-wide or even user-wide dependencies on our host system, based on what our Python application requires.
+
+I.e. imagine if we're installing geocoding OS libraries, PDF generation ones and so on, and we've have to manage those versions somehow, as well as make sure all these libraries exist on OS X + Ubuntu... eek!
+
+- we've got complete control and isolation of our libraries, Python version and Pip dependencies.
+
+I.e. there's no way installing another dependency on our host system is going to affect our application's dependencies by overwriting it, removing it, breaking it. And the manifest for managing these is all in one place, the Dockerfile.
 
 The second achievement here and extremely important as well, is that we've suddenly created our [package](https://github.com/lystable/learning-docker/blob/master/doc/01-concepts.md#image), as we called it in our initial introduction to Docker, which is the Docker image. The value out of that, we should not forget, is that it's cross-platform, distributable and deployable service, where the user is completely agnostic of what it's written in and what dependencies it may have. It is just an HTTP port to them.
+
+### More food for thought
+
+- What system dependencies does one need to install, besides the IDE, in order to work on this application?
