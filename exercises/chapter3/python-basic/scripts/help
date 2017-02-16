@@ -1,0 +1,12 @@
+#!/bin/bash
+echo """
+Welcome to the team! We look forward to your contributions to this awesome but nameless Python application!
+
+1. To start developing this Python server, please use these steps:
+
+<fill these in>
+
+2. Whenever you change your dependencies in requirements.txt, please use these steps:
+
+<fill these in>
+"""

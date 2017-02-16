@@ -2,3 +2,4 @@
 
 # This is where the Python docker image gets built
 #docker ... ? ...
+docker build -t ex3 .
