@@ -49,7 +49,7 @@ Let's get some automagic-ness in our next steps!
 
 ### Milestone 2
 
-- 12) Make Flask reload when files change
+- 12) Turn on Flask reloading for when files change
 - 13) Change the configuration of your `docker run` call to make sure that as you change the Python files with your IDE, the changes get reflected in your running Python application automagically. Time for a docker volume!! :tada: 
 - 14) Given file changes now get reflected inside the container, change the query text passed to the Giphy API to always append the word `scotland` to whatever the user is searching for. Test the effectiveness of your changes!
 - 14) Provided you've tested the steps yourself, fill in the missing instructions in `scripts/help` so that new joiners will find their way around!
