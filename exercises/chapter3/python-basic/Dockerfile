@@ -1,10 +1,23 @@
-FROM <a chosen operating system image, choose a specific version!>
-MAINTAINER <your name and username>
+FROM python:3.5.3
+MAINTAINER marbu
 
-WORKDIR /app
+COPY src /
+COPY requirements.txt /
 
-COPY <some stuff> <to some location inside the container>
+RUN pip install -r /requirements.txt
 
-RUN <do you need to install something?>
+CMD python /app.py
 
-CMD <run the Python app in the foreground>
+# To build:
+# $ docker build -t marflask .
+#
+# To run:
+# $ docker run -p 5000:5000 marflask
+#
+# Is running failing? troubleshoot:
+# $ docker run -ti library/marflask bash
+#
+# To push:
+# $ docker images
+# $ docker tag [IMAGE_ID] marbu/marflask:latest
+# $ docker push marbu/marflask
