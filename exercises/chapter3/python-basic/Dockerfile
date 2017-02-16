@@ -1,10 +1,16 @@
-FROM <a chosen operating system image, choose a specific version!>
-MAINTAINER <your name and username>
+FROM python:3.6-alpine
 
-WORKDIR /app
+MAINTAINER Carlos Mateo - carlosmateo
 
-COPY <some stuff> <to some location inside the container>
+# Add requirements.
+COPY requirements.txt ./
 
-RUN <do you need to install something?>
+# Copy sample app
+COPY src/ /
 
-CMD <run the Python app in the foreground>
+EXPOSE 5000
+
+RUN pip install -r ./requirements.txt
+
+
+CMD export FLASK_APP=/app.py; flask run --host=0.0.0.0
