@@ -4,9 +4,12 @@ Welcome to the team! We look forward to your contributions to this awesome but n
 
 1. To start developing this Python server, please use these steps:
 
-<fill these in>
+    npm install --global please-runner
+    please run
 
 2. Whenever you change your dependencies in requirements.txt, please use these steps:
 
-<fill these in>
+    # kill your \`please run\`
+    please build
+    please run again
 """

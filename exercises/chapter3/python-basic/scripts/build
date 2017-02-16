@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # This is where the Python docker image gets built
-#docker ... ? ...
+cd "$(dirname "$0")"/..
+docker build \
+  --tag the-next-big-flask-thing \
+  .

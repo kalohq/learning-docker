@@ -1,4 +1,17 @@
-#!/bin/bash
+#!/bin/bash -e
+cd "$(dirname "$0")"/..
+
+if ! \
+  docker images \
+  | grep -q -E '^the-next-big-flask-thing\b'
+then
+  scripts/build
+fi
 
 # This is where the Docker container that we can develop on gets run
-#docker ... ? ...
+docker run \
+  --rm \
+  --tty \
+  --interactive \
+  --publish 9000:5000 \
+  the-next-big-flask-thing
