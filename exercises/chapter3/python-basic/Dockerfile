@@ -1,10 +1,11 @@
-FROM <a chosen operating system image, choose a specific version!>
-MAINTAINER <your name and username>
+FROM python:3.6.0-alpine
+LABEL maintainer "Tomek Wiszniewski <t.wiszniewski@gmail.com>"
+  # Because MAINTAINER seems to be depracated 😬
 
-WORKDIR /app
+WORKDIR /the-next-big-flask-thing/
 
-COPY <some stuff> <to some location inside the container>
+COPY src/ /the-next-big-flask-thing/
+COPY requirements.txt /the-next-big-flask-thing/
 
-RUN <do you need to install something?>
-
-CMD <run the Python app in the foreground>
+RUN ["pip", "install", "-r", "/the-next-big-flask-thing/requirements.txt"]
+CMD ["python", "/the-next-big-flask-thing/src/app.py"]
