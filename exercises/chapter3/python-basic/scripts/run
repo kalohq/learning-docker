@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # This is where the Docker container that we can develop on gets run
-#docker ... ? ...
+docker run -it chapter3_python-workflow bash

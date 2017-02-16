@@ -1,10 +1,13 @@
-FROM <a chosen operating system image, choose a specific version!>
-MAINTAINER <your name and username>
+FROM ubuntu:16.04
+MAINTAINER Jeremiah Boyle "jeremiah.boyle@gmail.com"
 
 WORKDIR /app
 
-COPY <some stuff> <to some location inside the container>
+RUN apt-get update && apt-get install -yq python3 python3-pip
 
-RUN <do you need to install something?>
+COPY requirements.txt /tmp/requirements.txt
+RUN pip3 install -r /tmp/requirements.txt
 
-CMD <run the Python app in the foreground>
+COPY src /app
+
+CMD [ "python3", "app.py" ]

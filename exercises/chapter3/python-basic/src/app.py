@@ -18,6 +18,7 @@ def entry_point():
 @app.route('/query/<path:query>')
 def what(query):
     # Query Giphy API if there is a query
+    # query = query + 'scotland'
     response = requests.get(
         'http://api.giphy.com/v1/gifs/search?q={}&api_key={}&limit=10'.format(
             query, API_KEY
@@ -41,4 +42,4 @@ def what(query):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, use_reloader=True)
