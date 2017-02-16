@@ -73,3 +73,5 @@ The second achievement here and extremely important as well, is that we've sudde
 ### More food for thought
 
 - What system dependencies does one need to install, besides the IDE, in order to work on this application?
+
+- Why doesn't `Ctrl+C` work to stop the running container? Where should we look to fix this?
