@@ -6,6 +6,7 @@ import requests
 from flask import Flask, redirect, render_template
 
 app = Flask(__name__, static_url_path='')
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 API_KEY = 'dc6zaTOxFJmzC'
 
