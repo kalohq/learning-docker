@@ -2,21 +2,25 @@
 
 ### Goals
 
-- be able to dockerize a Python-based web server
+- be able to dockerize a Flask web server
+- come up with the steps that developers will use on a regular basis
 
 ## Exercise 3.1 Develop a basic Python workflow
 
 Whenever you work with a dockerized application it's less obvious that, at some point in the past, someone
-put in place the groundwork on which you're executing your day-to-day work. This exercise looks at that groundwork
-specifically for a Python application.
+put in place the groundwork on which you're executing your day-to-day work. Now there are some very critical
+parts in that groundwork that would make a normal workflow near impossible.
 
-**End-goal:** Write the Dockerfile for this Python application such that, when you build and run it, you see the response 'Hello world' via the browser. In addition, fill in the build and run scripts so that the next person that comes along can find
-an easy workflow to work with, when developing this Python app.
+This exercise looks at that groundwork specifically for a Flask application.
+
+**End-goal:** Write the Dockerfile for this Python application and come up with the workflow steps for an engineer to be able to pick it up and iterate on this application effectively.
+
+### Milestone 1
 
 - 1) Navigate to the `./exercises/chapter3/python-basic` directory in your command-line
 
-`Choice Time:` Pick an operating system you want to install your Python application on. Most common: CentOS, Ubuntu, ArchLinux.
-- 2) Find a Docker image on Docker Hub that is that operating system.
+`Choice Time:` Think about what base image we need. What are we looking for our environment to have, given the service we want to run on it?
+- 2) Find a Docker image on Docker Hub that is what you're looking for.
 - 3) Fill in the `FROM` step in the `Dockerfile` with that image name
 - 4) Fill in the `COPY` steps in the `Dockerfile`, with the files you need to run your application
 - 5) Fill in the `RUN` steps that you need in the `Dockerfile`
@@ -32,17 +36,20 @@ an easy workflow to work with, when developing this Python app.
 
 `Hint:` If not, is the container running? What are the container's logs showing? `docker help` is your friend again for these questions.
 - 10) With the build and run commands that you used, now fill in the `build` and `run` Bash scripts that already exist in the directory.
+
 - 11) Now, if someone is developing the Python code, what are the steps they would take to see their updates in the browser?
 
 ### Food for thought
 
+- Which base Docker image did you use? What installation steps did you have to run before running your Python application? Could those steps have been avoided by using a different, more specific, base image?
+
 - Does your Docker container automagically reload the Python code when you change it? Why not?
 
-## Hints for next time
+Let's get some automagic-ness in our next steps!
 
-Which base Docker image did you use? Which installation steps did you have to run
-before running your Python application? Coudl those steps have been avoided by
-using a different, more specific, base image?
+### Milestone 2
+
+
 
 ### Conclusion
 
